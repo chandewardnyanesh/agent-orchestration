@@ -1,0 +1,84 @@
+# ── Environment & secrets ─────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ── Virtual environments ──────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+.env.bak
+
+# ── Testing & coverage ────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+coverage.xml
+*.cover
+nosetests.xml
+test-results/
+
+# ── Type checkers ─────────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# ── IDEs & editors ────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Docker volumes & local data ───────────────────────────────
+postgres_data/
+redis_data/
+chroma_data/
+*.sqlite3
+*.db
+
+# ── Alembic generated (keep versions, ignore local state) ─────
+alembic/versions/__pycache__/
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Node (doc generation scripts) ────────────────────────────
+node_modules/
+package-lock.json
+
+# ── Generated reports & docs ──────────────────────────────────
+*.docx
+generate_doc.js
+generate_phase2_doc.js
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
